@@ -20,6 +20,10 @@ var State = new Schema({
     created: {
         type: Date,
         default: Date.now
+    },    
+    next: {
+        type: Schema.Types.ObjectId,
+        ref: 'State'        
     }
 
 });
